@@ -1,12 +1,9 @@
 package com.lambdasoup.coredeathbell;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.preference.ListPreference;
-import android.preference.Preference;
 import android.preference.PreferenceFragment;
 import android.support.v7.app.AppCompatActivity;
-import android.util.AttributeSet;
 
 /**
  * Created by jl on 01.07.16.

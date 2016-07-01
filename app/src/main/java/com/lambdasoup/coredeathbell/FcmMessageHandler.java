@@ -11,18 +11,20 @@ import android.preference.PreferenceManager;
 import android.support.v4.app.TaskStackBuilder;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.NotificationCompat;
-import android.util.Log;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
-import static com.lambdasoup.coredeathbell.CoreDeathBell.*;
+import timber.log.Timber;
+
+import static com.lambdasoup.coredeathbell.CoreDeathBell.NOTIFICATION_NON_CORE_BLOCK_MINED;
+import static com.lambdasoup.coredeathbell.CoreDeathBell.PENDING_INTENT_NON_CORE_BLOCK_MINED;
+import static com.lambdasoup.coredeathbell.CoreDeathBell.TOPIC_NON_CORE_BLOCK_MINED;
 
 /**
  * Created by jl on 01.07.16.
  */
 public class FcmMessageHandler extends FirebaseMessagingService {
-    private static final String TAG = FcmMessageHandler.class.getSimpleName();
 
     private static final String TOPICS = "/topics/";
 
@@ -33,7 +35,7 @@ public class FcmMessageHandler extends FirebaseMessagingService {
 
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
-        Log.d(TAG, "onMessageReceived: data=" + remoteMessage.getData() + " from=" + remoteMessage.getFrom());
+        Timber.d("onMessageReceived: data=%s from=%s", remoteMessage.getData(), remoteMessage.getFrom());
         if (remoteMessage.getFrom().equals(TOPICS + TOPIC_NON_CORE_BLOCK_MINED)) {
             handleNonCoreBlockMinedMessage(remoteMessage);
         }
@@ -44,7 +46,7 @@ public class FcmMessageHandler extends FirebaseMessagingService {
         try {
             event = DataMessageConverter.convert(remoteMessage, NonCoreBlockMinedEvent.class);
         } catch (DataMessageConverter.ConverterException e) {
-            Log.e(TAG, "could not convert event with data " + remoteMessage.getData());
+            Timber.e("could not convert event with data %s", remoteMessage.getData());
             return;
         }
 

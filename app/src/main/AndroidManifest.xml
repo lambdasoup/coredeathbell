@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.lambdasoup.coredeathbell">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".CoreDeathBell"
         android:allowBackup="true"
@@ -45,7 +47,7 @@
         </service>
         <service
             android:name=".SubscribeService"
-            android:exported="false"></service>
+            android:exported="false"/>
 
         <receiver
             android:name=".SubscribeReceiver"

@@ -17,7 +17,4 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="textAppearanceH1">
-
-    </style>
 </resources>

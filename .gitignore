@@ -1,0 +1,21 @@
+# gedit etc.
+**/*~
+
+# intellij
+# http://stackoverflow.com/a/5534865
+*.iml
+!.idea/
+.idea/*
+!.idea/copyright/
+!.idea/codeStyleSettings.xml
+
+# gradle
+/local.properties
+.gradle
+/build
+
+# osx junk
+.DS_Store
+
+# API key stuff
+/app/google-services.json

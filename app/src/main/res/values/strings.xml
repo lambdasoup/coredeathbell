@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Core Death Bell</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="notification_non_core_block_title">New non-core block mined!</string>
+    <string name="button_visit_external_site">View current status on...</string>
+    <string name="button_donate">Plz donaet if u liek dis</string>
+    <string name="button_settings">Settings</string>
+
+    <string name="pref_title_notification_sound">Notification sound</string>
+
+    <string name="pref_notification_sound_value_bell">Bell</string>
+    <string name="pref_notification_sound_value_default">Default</string>
+    <string name="pref_notification_sound_value_silent">Silent</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="notification_play_services_not_available_title">Google Play Services are not available</string>
+    <string name="notification_play_services_not_available_text">CoreDeathBell needs a current version of Google Play Services to run.</string>
+    <string name="notification_play_services_not_available_action_fix_it">Fix it</string>
+</resources>

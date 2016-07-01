@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources  translatable="false">
+    <string name="setting_notification_sound_bell" translatable="false">com.lambdasoup.coredeathbell.notification_sound.BELL</string>
+    <string name="setting_notification_sound_default" translatable="false">com.lambdasoup.coredeathbell.notification_sound.DEFAULT</string>
+    <string name="setting_notification_sound_silent">com.lambdasoup.coredeathbell.notification_sound.SILENT</string>
+    <string name="pref_key_notification_sound">com.lambdasoup.coredeathbell.preference.NOTIFICATION_SOUND</string>
+
+    <string-array name="setting_notification_sound_entry_values">
+        <item>@string/setting_notification_sound_bell</item>
+        <item>@string/setting_notification_sound_default</item>
+        <item>@string/setting_notification_sound_silent</item>
+    </string-array>
+
+    <string-array name="pref_notification_sound_entries">
+        <item>@string/pref_notification_sound_value_bell</item>
+        <item>@string/pref_notification_sound_value_default</item>
+        <item>@string/pref_notification_sound_value_silent</item>
+    </string-array>
+</resources>

@@ -24,8 +24,6 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
 
-    // TODO: About Activity
-
     // TODO: main activity layout, donate button, current status button
     @Override
     protected void onCreate(Bundle savedInstanceState) {

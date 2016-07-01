@@ -15,4 +15,10 @@
     <string name="notification_play_services_not_available_title">Google Play Services are not available</string>
     <string name="notification_play_services_not_available_text">CoreDeathBell needs a current version of Google Play Services to run.</string>
     <string name="notification_play_services_not_available_action_fix_it">Fix it</string>
+    <string name="app_about_info_text">CoreDeathBell is licensed under LGPL 3.0 and available on github under https://github.com/lambdasoup/coredeathbell</string>
+    <string name="about_cc_title">CreativeCommons Attributions</string>
+    <string name="about_cc_text">Thanks go to juskiddink for the bell sound (https://www.freesound.org/people/juskiddink/sounds/74920/), used under CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/).</string>
+    <string name="title_activity_about">About CoreDeathBell</string>
+    <string name="action_about">About</string>
+    <string name="about_play_services_title">Licenses for included libraries</string>
 </resources>

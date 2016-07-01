@@ -60,7 +60,7 @@ public class FcmMessageHandler extends FirebaseMessagingService {
                 .setContentIntent(contentIntent)
                 .setAutoCancel(true)
                 .setSmallIcon(R.drawable.ic_stat_notification)
-                .setColor(ContextCompat.getColor(this, R.color.colorPrimary))
+                .setColor(ContextCompat.getColor(this, R.color.colorAccent))
                 .setCategory(Notification.CATEGORY_EVENT);
 
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);

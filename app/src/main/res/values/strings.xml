@@ -20,7 +20,7 @@
     <string name="title_activity_about">About CoreDeathBell</string>
     <string name="action_about">About</string>
     <string name="about_play_services_title">Licenses for included libraries</string>
-    <string name="main_title">Another Classic block mined - YAY!</string>
+    <string name="main_title">Another Non-Core block mined - YAY!</string>
     <string name="no_bitcoin_client">No Bitcoin client found. Please scan the QR code.</string>
     <string name="pls_donate">Happy about it? Donate some coins!</string>
 </resources>

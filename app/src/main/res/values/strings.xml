@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Core Death Bell</string>
-    <string name="notification_non_core_block_title">New Classic (BIP109) block mined!</string>
-    <string name="button_visit_external_site">Recent classic block distribution</string>
+    <string name="notification_non_core_block_title">New Non-Core (BU + Classic) block mined!</string>
+    <string name="button_visit_external_site">Recent block vote distribution</string>
     <string name="button_donate">Support this app - donate coinz ;-)</string>
     <string name="button_settings">Notification settings</string>
 

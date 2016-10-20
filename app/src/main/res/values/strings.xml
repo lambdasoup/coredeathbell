@@ -23,4 +23,5 @@
     <string name="main_title">Another Non-Core block mined - YAY!</string>
     <string name="no_bitcoin_client">No Bitcoin client found. Please scan the QR code.</string>
     <string name="pls_donate">Happy about it? Donate some coins!</string>
+    <string name="notification_text">Big block vote stats: %1$.1f%% (24h),  %2$.1f%% (7d)</string>
 </resources>

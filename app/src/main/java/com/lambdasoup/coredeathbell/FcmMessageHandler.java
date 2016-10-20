@@ -21,9 +21,6 @@ import static com.lambdasoup.coredeathbell.CoreDeathBell.NOTIFICATION_NON_CORE_B
 import static com.lambdasoup.coredeathbell.CoreDeathBell.PENDING_INTENT_NON_CORE_BLOCK_MINED;
 import static com.lambdasoup.coredeathbell.CoreDeathBell.TOPIC_NON_CORE_BLOCK_MINED;
 
-/**
- * Created by jl on 01.07.16.
- */
 public class FcmMessageHandler extends FirebaseMessagingService {
 
     private static final String TOPICS = "/topics/";
@@ -59,7 +56,8 @@ public class FcmMessageHandler extends FirebaseMessagingService {
                 .setWhen(event.when)
                 .setShowWhen(true)
                 .setContentTitle(getText(R.string.notification_non_core_block_title))
-                .setContentIntent(contentIntent)
+				.setContentText(getString(R.string.notification_text, event.s1d * 100, event.s7d * 100))
+				.setContentIntent(contentIntent)
                 .setAutoCancel(true)
                 .setSmallIcon(R.drawable.ic_stat_notification)
                 .setColor(ContextCompat.getColor(this, R.color.colorAccent))

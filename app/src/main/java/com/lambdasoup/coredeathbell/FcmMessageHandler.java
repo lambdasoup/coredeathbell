@@ -58,7 +58,8 @@ public class FcmMessageHandler extends FirebaseMessagingService {
                 .setContentTitle(getText(R.string.notification_non_core_block_title))
 				.setContentText(getString(R.string.notification_text, event.s1d * 100, event.s7d * 100))
 				.setContentIntent(contentIntent)
-                .setAutoCancel(true)
+				.setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
+				.setAutoCancel(true)
                 .setSmallIcon(R.drawable.ic_stat_notification)
                 .setColor(ContextCompat.getColor(this, R.color.colorAccent))
                 .setCategory(Notification.CATEGORY_EVENT);

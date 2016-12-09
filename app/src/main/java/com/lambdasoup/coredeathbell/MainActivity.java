@@ -61,15 +61,4 @@ public class MainActivity extends AppCompatActivity {
 		startActivity(intent);
 	}
 
-	public void onDonate(View view) {
-		Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("bitcoin:1ox81cadiW74fFZw3qvRXhnBYerebUGbN"));
-
-		ResolveInfo resolveInfo = getPackageManager().resolveActivity(intent, PackageManager.MATCH_DEFAULT_ONLY);
-		if (resolveInfo == null) {
-			Toast.makeText(this, R.string.no_bitcoin_client, Toast.LENGTH_SHORT).show();
-			return;
-		}
-
-		startActivity(intent);
-	}
 }

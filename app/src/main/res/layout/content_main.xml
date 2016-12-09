@@ -24,20 +24,6 @@
         android:gravity="center"
         android:layout_height="wrap_content"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:text="@string/pls_donate"
-        android:layout_height="wrap_content"/>
-
-    <ImageView
-        android:layout_margin="16dp"
-        android:id="@+id/button_donate"
-        android:layout_width="144dp"
-        android:layout_height="144dp"
-        android:src="@drawable/qr"
-        android:onClick="onDonate"
-        android:text="@string/button_donate"/>
-
     <Button
         android:layout_margin="16dp"
         android:id="@+id/button_visit_external_site"
